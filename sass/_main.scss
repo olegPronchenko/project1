@@ -42,7 +42,7 @@
 
 
 .header, .content, .footer {
-	max-width: 800px;
+	max-width: 500px;
 	height: 200px;
 	margin: 0 auto;
 }
@@ -63,41 +63,8 @@
 
 body {
 	background: #ccc;
-}
-/* .main {
-	@include container;
-	background: #333;
-	@include show-grid;
 
-	min-height: 300px;
-	border: 1px solid blue;
-	@include responsive("sitebar-1000");
-	
 }
-
-.blocks {
-	background: #ccc;
-	outline: 1px solid red;
-	height: 100px;	
-	@include responsive("default-900" "default-680");
-}
-
-
-.ag1 {
-	//width: 200px;
-	@include span(3);
-}
-.ag3 {
-	@include span(2);
-	@include last;
-	//border:10px solid blue;
-}
-.ag2 {
-	@include span(7);
-	//width: 600px;
-}
-
- */
 
 
 
