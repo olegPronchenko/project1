@@ -1,0 +1,6 @@
+@import "compass/css3";
+
+@include font-face("HelveticaNeueLTStd-Roman",url(fonts/helvetica-neue/HelveticaNeueLTStd-Roman.otf));
+@include font-face("HelveticaLTStd-Roman",url(fonts/helvetica-lt-std/HelveticaLTStd-Roman.otf));
+@include font-face("HelveticaLTStd-Bold",url(fonts/helvetica-lt-std/HelveticaLTStd-Bold.otf));
+@include font-face("HelveticaLTStd-Comp",url(fonts/helvetica-lt-std/HelveticaLTStd-Comp.otf));

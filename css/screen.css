@@ -1,0 +1,100 @@
+/* LOGO */
+/*center blocks*/
+/*hidden x,y*/
+/*MEDIA*/
+/*--------------------FOR EXTEND------------------------*/
+/* width,height - 100% */
+/*CENTER TEXT*/
+/*transfer words*/
+/*ICON SPRITE li,a,div*/
+/* line 44, ../sass/_main.scss */
+.header, .content, .footer {
+  max-width: 800px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* line 49, ../sass/_main.scss */
+.header {
+  background: green;
+}
+@media (max-width: 800px) {
+  /* line 49, ../sass/_main.scss */
+  .header {
+    max-width: 750px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 49, ../sass/_main.scss */
+  .header {
+    max-width: 500px;
+  }
+}
+
+/* line 53, ../sass/_main.scss */
+.content {
+  background: black;
+}
+@media (max-width: 800px) {
+  /* line 53, ../sass/_main.scss */
+  .content {
+    max-width: 650px;
+  }
+}
+
+/* line 57, ../sass/_main.scss */
+.footer {
+  background: grey;
+}
+@media (max-width: 800px) {
+  /* line 57, ../sass/_main.scss */
+  .footer {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 57, ../sass/_main.scss */
+  .footer {
+    max-width: 300px;
+  }
+}
+
+/* line 64, ../sass/_main.scss */
+body {
+  background: #ccc;
+}
+
+/* .main {
+	@include container;
+	background: #333;
+	@include show-grid;
+
+	min-height: 300px;
+	border: 1px solid blue;
+	@include responsive("sitebar-1000");
+	
+}
+
+.blocks {
+	background: #ccc;
+	outline: 1px solid red;
+	height: 100px;	
+	@include responsive("default-900" "default-680");
+}
+
+
+.ag1 {
+	//width: 200px;
+	@include span(3);
+}
+.ag3 {
+	@include span(2);
+	@include last;
+	//border:10px solid blue;
+}
+.ag2 {
+	@include span(7);
+	//width: 600px;
+}
+
+ */

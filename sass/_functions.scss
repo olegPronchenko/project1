@@ -1,0 +1,95 @@
+
+
+
+@mixin header_footer($teg,$value) {
+  @if $teg == b {
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+  }
+  @if $teg == m {
+	margin-bottom: ($value + 50)+px;
+  }
+  @if $teg == h {
+	width: 100%;
+	position: relative;
+  }
+  @if $teg == f {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: ($value)+px;
+  }
+}
+
+
+
+
+
+/* LOGO */
+@mixin logo($w,$h,$t,$l,$url) {
+	width: $w;
+	height: $h;
+	top: $t; left: $l;
+	position: absolute;
+	& a {
+		position: absolute;
+		top: 0;left: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		text-indent: -999em;
+		background: url($url) center no-repeat;
+	}
+}
+
+
+/*center blocks*/
+@mixin center-block($w,$h) {
+	position: absolute;
+	width: $w+px;
+	height: $h+px;
+	top: 50%;left:50%;
+	margin-left: -($w/2)+px;
+	margin-top: -($h/2)+px;
+}
+@mixin center-vertical($h) {
+	position: absolute;
+	height: $h+px;
+	top: 50%;
+	margin-top: -($h/2)+px;
+}
+@mixin center-gorizontal($w) {
+	position: absolute;
+	width: $w+px;
+	left:50%;
+	margin-left: -($w/2)+px;
+}
+
+
+/*hidden x,y*/
+@mixin block-hidden($value) {
+	@if $value == x {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	@if $value == y {
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+}
+
+
+
+/*MEDIA*/
+@mixin rd($wh,$value) {
+  @if $wh == w {
+    @media only screen and (max-width: $value+px) { @content; }
+  }
+  @if $wh == h {
+    @media only screen and (max-height: $value+px) { @content; }
+  }
+}
+

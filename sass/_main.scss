@@ -1,0 +1,110 @@
+@import "compass/css3";
+@import "functions";
+@import "extend";
+@import "breakpoint";
+@import "grids";
+//span-columns(3,12);
+
+
+@mixin responsive($list){
+  @each $item in $list {
+
+    @if $item == "header-800" {
+    	@include breakpoint(max-width 800px){
+    		max-width: 750px; 
+    	}
+    }
+    @if $item == "header-700" {
+    	@include breakpoint(max-width 700px){
+    		max-width: 500px; 
+    	}
+    }
+
+    @if $item == "content-800" {
+    	@include breakpoint(max-width 800px){
+    		max-width: 650px; 
+    	}
+    }
+    @if $item == "footer-800" {
+    	@include breakpoint(max-width 800px){
+    		max-width: 600px; 
+    	}
+    }
+    @if $item == "footer-700" {
+    	@include breakpoint(max-width 700px){
+    		max-width: 300px; 
+    	}
+    }
+
+  }
+}
+
+
+
+.header, .content, .footer {
+	max-width: 800px;
+	height: 200px;
+	margin: 0 auto;
+}
+.header {
+	background: green;
+	@include responsive("header-800" "header-700");
+}
+.content {
+	background: black;
+	@include responsive("content-800");
+}
+.footer {
+	background: grey;
+	@include responsive("footer-800" "footer-700");
+}
+
+
+
+body {
+	background: #ccc;
+}
+/* .main {
+	@include container;
+	background: #333;
+	@include show-grid;
+
+	min-height: 300px;
+	border: 1px solid blue;
+	@include responsive("sitebar-1000");
+	
+}
+
+.blocks {
+	background: #ccc;
+	outline: 1px solid red;
+	height: 100px;	
+	@include responsive("default-900" "default-680");
+}
+
+
+.ag1 {
+	//width: 200px;
+	@include span(3);
+}
+.ag3 {
+	@include span(2);
+	@include last;
+	//border:10px solid blue;
+}
+.ag2 {
+	@include span(7);
+	//width: 600px;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+

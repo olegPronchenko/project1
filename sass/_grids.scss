@@ -1,0 +1,24 @@
+@import "susy";
+@import "susyone";
+
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/3,
+  container: 1000px,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+
+  debug: (
+	image: show,
+	color: rgba(#f00, .3),
+	z-index: 1,
+	output: background,
+	toggle: top right,
+  )
+);
+
+//$total-columns: 8;
+//$gutter-width: 1em;
